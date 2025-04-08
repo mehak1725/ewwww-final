@@ -2,42 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EWWWW - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EWWWW - Eco Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Welcome to EWWWW</h1>
-    <p>Eco Way to a Waste Free World Wide Web</p>
+    <p>Eco Way to a Waste-Free World Wide Web</p>
     <nav>
-      <a href="index.html">About Us</a>
-      <a href="waste-scanner.html">Waste Scanner</a>
-      <a href="eco-suggestions.html">Eco Suggestions</a>
-      <a href="locate-bins.html">Locate Bins</a>
+      <a href="#home">Home</a>
+      <a href="#scanner">Waste Scanner</a>
+      <a href="#suggestions">Eco Suggestions</a>
+      <a href="#locate">Locate Bins</a>
     </nav>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>About Us</h2>
-      <p>EWWWW is here to reduce waste...</p>
-      <p><strong>REUSE • REDUCE • RECYCLE</strong></p>
-    </section>
+  <div class="container" id="home">
+    <h2>About Us</h2>
+    <p>EWWWW is your guide to reduce, reuse, and recycle in smart, tech-powered ways.</p>
+    <div class="card-grid">
+      <a class="card" href="#scanner">🗑️ Scan Waste</a>
+      <a class="card" href="#suggestions">💡 Eco Suggestions</a>
+      <a class="card" href="#locate">📍 Locate Bins</a>
+    </div>
+  </div>
 
-    <section class="services">
-      <h3>Our Services</h3>
-      <div class="service-grid">
-        <a href="waste-scanner.html" class="card">🗑️ Scan Waste</a>
-        <a href="eco-suggestions.html" class="card">🤖 Eco Suggestions</a>
-        <a href="locate-bins.html" class="card">📍 Locate Bins</a>
-      </div>
-    </section>
-  </main>
+  <div class="container" id="scanner">
+    <h2>Waste Scanner</h2>
+    <input type="file" id="wasteInput" /> 
+    <button onclick="scanWaste()">Scan</button>
+    <p id="scanResult">Detect type of waste and get eco-friendly disposal tips.</p>
+  </div>
+
+  <div class="container" id="suggestions">
+    <h2>Eco Suggestions</h2>
+    <input type="text" id="ecoInput" placeholder="Ask anything about reusing or recycling" />
+    <button onclick="getSuggestion()">Ask</button>
+    <p id="suggestionResult">Example: "What can I do with an old phone?"</p>
+  </div>
+
+  <div class="container" id="locate">
+    <h2>Locate Bins Near You</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/India_location_map.svg/1920px-India_location_map.svg.png" alt="Map" />
+    <p>Find red, green, and yellow bins around you.</p>
+  </div>
 
   <footer>
-    <p>📞 +91 98765 43210 | 📧 contact@ewwww.org</p>
-    <p>📍 123 Green Lane, EcoCity</p>
+    <p>📞 98765 43210 | 📧 contact@ewwww.org | 📍 EcoCity, India</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
