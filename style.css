@@ -1,45 +1,235 @@
+/* Global Styles */
 body {
   margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
-  background: #e9f5ec;
-  color: #043513;
+  background-color: #293e25;
 }
 
-header {
-  background: #ffffffaa;
-  backdrop-filter: blur(5px);
-  padding: 20px;
+/* Navigation Bar */
+.main-nav {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(90deg, #293e25 0%, #338a38 50%, #061a03 100%);
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+
+.nav-item {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url("https://cdn.builder.io/api/v1/image/assets/TEMP/0877e2c19ba9aaa19be3d1ea166001b8dc41e01b");
+  background-size: cover;
+  height: 1024px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
 }
 
 .logo {
-  height: 80px;
+  width: 265px;
+  height: 294px;
+  margin-bottom: 50px;
 }
 
-nav button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  font-weight: bold;
-  border: none;
-  background: #00c853;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-nav button:hover {
-  background: #009e42;
-}
-
-.center-content {
+.hero-content {
   text-align: center;
-  margin-top: 100px;
 }
 
-input[type="file"] {
-  margin-top: 20px;
+.hero-title {
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-size: 128px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.hero-subtitle {
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+/* About Section */
+.about-section {
+  padding: 100px 80px;
+  background-color: #293e25;
+}
+
+.section-title {
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-size: 96px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.about-text {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  max-width: 738px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Principles Section */
+.principles-section {
+  padding: 50px 80px;
+  background-color: #293e25;
+}
+
+.principle {
+  color: #fff;
+  font-family: "Sansita One", cursive;
+  font-size: 96px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Services Section */
+.services-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #293e25;
+}
+
+.services-title {
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-size: 64px;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 100px;
+}
+
+.service-card {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1e2b1a;
+}
+
+.service-icon {
+  width: auto;
+  height: 200px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 30px 80px;
+  background-color: #293e25;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+
+.contact-info {
+  margin: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-item {
+    font-size: 20px;
+  }
+
+  .hero-title {
+    font-size: 96px;
+  }
+
+  .hero-subtitle {
+    font-size: 36px;
+  }
+
+  .about-text {
+    font-size: 20px;
+  }
+
+  .principle {
+    font-size: 72px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+  }
+
+  .about-section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .principle {
+    font-size: 36px;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .services-title {
+    font-size: 36px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    font-size: 18px;
+  }
 }
