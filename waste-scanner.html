@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Waste Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header"><a href="index.html">← Go back to Home</a></div>
+  <div class="scanner-container">
+    <img src="img/sample-waste.jpg" alt="Scanned Waste" class="scanned-img" />
+    <div class="info-boxes">
+      <div class="info-box" onclick="showPopup('dispose')">How to Dispose</div>
+      <div class="info-box" onclick="showPopup('upcycle')">Upcycling Idea</div>
+      <div class="info-box" onclick="showPopup('toxic')">Toxic Alert</div>
+      <div class="info-box" onclick="showPopup('score')">Eco Score</div>
+    </div>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <span id="popup-close" onclick="hidePopup()">×</span>
+    <p id="popup-content">Popup text will appear here.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
