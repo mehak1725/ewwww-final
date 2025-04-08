@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>EWWWW - Home</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="nav">
-    <img src="img/ewwww-logo-4.png" class="logo" alt="EWWWW Logo" />
-    <div class="nav-links">
-      <a href="#">Scan Waste</a>
-      <a href="#">Get Eco Suggestions</a>
-      <a href="#">Locate Bins</a>
-    </div>
-  </div>
-
-  <div class="hero">
-    <h1>Eco Way to a Waste-Free World</h1>
-    <p>Smart AI-powered waste management made fun & easy.</p>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EWWWW - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="img/ewwww-logo-4.png" alt="Logo" class="logo" />
+      <nav>
+        <button onclick="navigate('scan.html')">Scan Waste</button>
+        <button onclick="navigate('eco.html')">Get Eco Suggestions</button>
+        <button onclick="navigate('bins.html')">Locate Bins</button>
+      </nav>
+    </header>
+    <main class="center-content">
+      <h1>Eco Way to a Waste-Free World</h1>
+      <p>Smart AI-powered waste management made fun & easy.</p>
+    </main>
+  </body>
 </html>
